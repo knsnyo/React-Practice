@@ -45,3 +45,22 @@ var lordify=function(first_name, land) {
 }
 var lordify=(first_name, land)=>`${first_name} of ${land}.`
 
+/* this는 어려우니까 일단 넘어가자 */
+
+/* 객체분할 */
+var sandwich={
+    bread:'더치 크런치',
+    meat:'참치',
+    cheese:'스위스',
+    toppings:['상추', '토마토', '머스타드']
+}
+
+var {bread, meat} = sandwich
+
+console.log(bread, meat)
+
+/* spread operation
+...은 배열을 분해해서 넣어준다.
+*/
+
+/* pomise */
