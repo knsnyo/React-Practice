@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import R038 from './R038.js';
+import R039 from './R039.js';
 import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div>
       <h1>Start React 200!</h1>
       <p>JSX 적응하기</p>
-      <R038/>
+      <R039/>
     </div>
   );
 }
