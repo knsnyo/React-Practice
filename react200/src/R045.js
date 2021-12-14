@@ -1,6 +1,7 @@
 import React from 'react';
 import { InputGroup, InputGroupText, Input, Button } from 'reactstrap';
 
+
 function R045(props){
 	return(
 		<>
