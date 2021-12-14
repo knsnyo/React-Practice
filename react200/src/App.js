@@ -1,14 +1,13 @@
 import React from 'react';
-import './App.css';
-import R039 from './R039.js';
 import 'bootstrap/dist/css/bootstrap.css'
+import R044 from './R044.js';
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>JSX 적응하기</p>
-      <R039/>
+      <R044/>
     </div>
   );
 }
