@@ -1,11 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
-import R065 from './R065.js';
+import R077 from './R077.js';
 
 function App() {
   return (
     <div>
-      <R065/>
+      <R077/>
     </div>
   );
 }
