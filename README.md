@@ -1,4 +1,4 @@
 # React-Practice
 
 just do it.
-- Book: Learning React
+- Book: 초보자를 위한 REACT 200제
