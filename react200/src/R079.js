@@ -1,16 +1,14 @@
-import React, { Component } from "react";
-import { add } from "./actions";
+import React, { useContext } from 'react';
+import { R079Context } from './App';
 
-class R079 extends Component{
-  render(){
-    return (
-      <input value="Add20" type="button" onClick={addString} />
-    );
-  }
+export default () => {
+  const {state, dispatch} = useContext(R079Context);
+
+  return(
+    <input 
+      value="ADD 200"
+      type="button"
+      onClick={()=>{dispatch({type: 'ADD', value: state.str + '200'})}}
+    />
+  )
 }
-
-const addString = () => {
-  this.store.dispatch(add());
-};
-
-export default R079;

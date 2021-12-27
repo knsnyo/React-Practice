@@ -1,16 +1,31 @@
-import React, { Component } from 'react';
-import R079 from './R079';
+import React, { useReducer } from 'react'
+import R079 from './R079'
 
-class App extends Component{
-  render(){
-    return (
-      <div>
-        <h1>Start React</h1>
-        <span>{this.props.store.getStore().data.str}</span>
-        <R079 store={this.props.store}/>
-      </div>
-    );
-  }
+export const R079Context = React.createContext();
+const initialState = {
+  str: 'REACT',
 }
 
-export default App;
+export default () => {
+  const [state, dispatch] = useReducer(reducer, initialState)
+
+  return(
+    <R079Context.Provider value={{state, dispatch}}>    
+      <h1>Start REACT 200</h1>
+      <span>{state.str}</span><br/>
+      <R079/>
+    </R079Context.Provider>
+  )
+}
+
+const reducer = (state, action) => {
+  switch(action.type){
+    case 'ADD':
+      return {
+        ...state,
+        str: action.value,
+      };
+    default:
+      return {initialState};
+  }
+}
