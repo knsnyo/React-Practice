@@ -10,8 +10,11 @@ just do it.
 class -> function
 
 state관리-> useState()
+
 componentDidmount, ... -> useEffect()
+
 reducer -> useReducer()
+
 context -> useContext()
 
 ---
