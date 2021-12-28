@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { R079Context } from './App';
+import { R079Context } from '../App';
 
 export default () => {
   const {state, dispatch} = useContext(R079Context);

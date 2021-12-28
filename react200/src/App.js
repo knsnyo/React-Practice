@@ -1,31 +1,24 @@
-import React, { useReducer } from 'react'
-import R079 from './R079'
+import React from "react";
+import { Route, Routes, BrowserRouter as Router, Link } from "react-router-dom";
+import R089_1 from "./components/R089_1";
+import R089_2 from "./components/R089_2";
 
-export const R079Context = React.createContext();
-const initialState = {
-  str: 'REACT',
-}
+const App = () => {
+  return (
+    <Router>
+      {/* header */}
+      <ol> this is header
+        <li><Link to={'./R089_1'}>이동 1</Link></li>
+        <li><Link to={'./R089_2'}>이동 2</Link></li>
+      </ol>
+      <Routes>
+        <Route exact path='/R089_1' element={<R089_1/>}/>
+        <Route exact path='/R089_2' element={<R089_2/>}/>
+      </Routes>
+      <p>this is footer</p>
+      {/* footer */}
+    </Router>
+  );
+};
 
-export default () => {
-  const [state, dispatch] = useReducer(reducer, initialState)
-
-  return(
-    <R079Context.Provider value={{state, dispatch}}>    
-      <h1>Start REACT 200</h1>
-      <span>{state.str}</span><br/>
-      <R079/>
-    </R079Context.Provider>
-  )
-}
-
-const reducer = (state, action) => {
-  switch(action.type){
-    case 'ADD':
-      return {
-        ...state,
-        str: action.value,
-      };
-    default:
-      return {initialState};
-  }
-}
+export default App;
