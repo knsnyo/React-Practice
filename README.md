@@ -230,7 +230,6 @@ npm install react-redux --save
 
 ## SPA(Single Page Application)을 위한 react-router-dom
 
----
 console에 치셈.
 ```
 npm install react-router-dom --save
