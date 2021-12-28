@@ -207,7 +207,8 @@ export default () => {
 ```
 예제가 안 이쁨. 더 이쁘게 만들어 봄.
 
-# Hooks 쓰기 싫은데?
+* Hooks 쓰기 싫은데?
+
 -> 딴 거 쓰셈.
 
 1. Context API
